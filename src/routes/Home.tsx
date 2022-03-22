@@ -4,11 +4,16 @@ import HeaderMain from "../components/HeaderMain";
 import ModeBtn from "../components/ModeBtn";
 import SetImg from "../components/SetImg";
 import Weather from "../components/Weather";
+import ToDo from '../components/ToDo'
 
 const SignIn = styled.div`
     position: absolute;
     right: 10%;
     top: 3%;
+    border: none;
+    font-size: 16px;
+    background: none;
+    color: ${(props) => props.theme.textColor};
 `
 
 
@@ -16,7 +21,6 @@ function Home({ userObj }: any) {
     return (
         <>
             <HeaderMain />
-            <SetImg />
             <ModeBtn />
             <Weather />
             <SignIn>

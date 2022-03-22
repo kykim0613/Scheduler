@@ -7,6 +7,7 @@ import SetImg from "../components/SetImg";
 import Weather from "../components/Weather";
 import LogOut from "../components/LogOut";
 import styled from "styled-components";
+import ToDo from "../components/ToDo";
 
 const SignIn = styled.div`
     position: absolute;
@@ -19,7 +20,6 @@ function HomeSignIn({ userObj }: any) {
     return (
         <>
             <HeaderMain />
-            <SetImg />
             <ModeBtn />
             <Weather />
             <SignIn>

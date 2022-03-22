@@ -1,6 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import React from "react";
 import { authService } from "../fireB";
+import styled from "styled-components";
+
+const LogOutBtn = styled.button`
+    border: none;
+    font-size: 16px;
+    background: none;
+    color: ${(props) => props.theme.textColor};
+`
 
 function LogOut () {
     const history = useNavigate();
@@ -11,7 +19,7 @@ function LogOut () {
 
     return (
         <>
-        <button onClick={onLogOutClick}>로그아웃</button>
+        <LogOutBtn onClick={onLogOutClick}>로그아웃</LogOutBtn>
         </>
     )
 }

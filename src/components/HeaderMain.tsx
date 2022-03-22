@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 import img5 from '../img/img5.jpg'
+import ToDo from './ToDo';
 
 const Wrapper = styled.div`
-    display: grid;
     width: 100%;
-    height: 100vh;
+    height: 500px;
     color: ${(props) => props.theme.textColor};
-    justify-content: center;
-    align-items: center;
     font-size: 30px;
     font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
 `
 const BgImg = styled.img`
     position: fixed;
@@ -28,6 +31,7 @@ function HeaderMain() {
     return(
         <Wrapper>
             S C H E D U L E R
+            <ToDo />
             <BgImg src={img5} />
         </Wrapper>
     )
