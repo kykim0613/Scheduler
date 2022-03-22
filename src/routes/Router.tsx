@@ -13,11 +13,11 @@ function AppRouter({ isLoggedIn, userObj }: any) {
             <Routes>
                 {isLoggedIn ? (
                     <>
-                        <Route path='/' element={<HomeSignIn userObj={userObj} />} />
+                        <Route path='/Scheduler' element={<HomeSignIn userObj={userObj} />} />
                     </>
                 ) : (
                     <>
-                        <Route path='/' element={<Home userObj={userObj} />} />
+                        <Route path='/Scheduler' element={<Home userObj={userObj} />} />
                         <Route path='/LogIn' element={<LogIn />} />
                     </>
                 )}

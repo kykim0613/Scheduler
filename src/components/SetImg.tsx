@@ -68,7 +68,6 @@ function SetImg() {
             <form onSubmit={onSubmit}>
         <input type="file" accept="image/*" onChange={onFileChange}/>
         </form>
-        <ImgWrapper />
         {attachment && <><BgImg src={attachment} /></>}
         </Wrapper>
     )

@@ -82,7 +82,7 @@ function Auth() {
         }
         const data = await signInWithPopup(authService, provider);
         console.log(data)
-        navigate("/")
+        navigate("/Scheduler")
     }
     return (
         <>

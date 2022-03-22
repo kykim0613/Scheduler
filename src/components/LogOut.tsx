@@ -6,7 +6,7 @@ function LogOut () {
     const history = useNavigate();
     const onLogOutClick = () => {
         authService.signOut();
-        history("/");
+        history("/Scheduler");
     }
 
     return (
