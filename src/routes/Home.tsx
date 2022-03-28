@@ -1,10 +1,12 @@
 import { Link, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import HeaderMain from "../components/HeaderMain";
+import Main from "../components/Main";
 import ModeBtn from "../components/ModeBtn";
 import SetImg from "../components/SetImg";
 import Weather from "../components/Weather";
 import ToDo from '../components/ToDo'
+import Board from "../components/Board";
+import { IToDo } from "../atom";
 
 const SignIn = styled.div`
     position: absolute;
@@ -16,11 +18,10 @@ const SignIn = styled.div`
     color: ${(props) => props.theme.textColor};
 `
 
-
-function Home({ userObj }: any) {
+function Home({ userObj }:any, {text}: IToDo) {
     return (
         <>
-            <HeaderMain />
+            <Main />
             <ModeBtn />
             <Weather />
             <SignIn>
@@ -30,9 +31,8 @@ function Home({ userObj }: any) {
                     로그인
                 </Link>
             </SignIn>
-            <div>
-                { }
-            </div>
+            <ToDo />
+            <Board />
         </>
     )
 }

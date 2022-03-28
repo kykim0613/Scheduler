@@ -19,6 +19,7 @@ const DarkBtn = styled.button`
     box-shadow: 2px 2px 3px 1px black;
     font-weight: 800;
     letter-spacing: 1px;
+    z-index: 3;
     :hover {
         background-color: ${(props) => props.theme.btnAccentColor};
         color: ${(props) => props.theme.btnColor};

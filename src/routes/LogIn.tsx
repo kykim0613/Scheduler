@@ -1,12 +1,14 @@
 import { Link, Route } from "react-router-dom";
 import Auth from "../components/Auth";
-import HeaderMain from "../components/HeaderMain";
+import Main from "../components/Main";
+import Weather from "../components/Weather";
 
 function LogIn() {
     return (
         <>
-        <HeaderMain />
+        <Main />
         <Auth />
+        <Weather />
         </>
     )
 }

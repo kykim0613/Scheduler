@@ -14,7 +14,7 @@ const Navigation = () => (
     <nav>
         <ul>
             <NavHome>
-                <Link to="/">
+                <Link to="/Scheduler">
                     SCHEDULER
                 </Link>
             </NavHome>

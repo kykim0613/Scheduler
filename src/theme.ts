@@ -1,7 +1,7 @@
 import { DefaultTheme } from "styled-components";
 
 export const darkMode: DefaultTheme = {
-    bgColor: "#222",
+    bgColor: "#111",
     textColor: "#fff",
     accentColor: "#5078dc",
     btnColor: "#fff",
@@ -10,7 +10,7 @@ export const darkMode: DefaultTheme = {
 
 export const lightMode: DefaultTheme = {
     bgColor: "#fff",
-    textColor: "#222",
+    textColor: "#111",
     accentColor: "#5078dc",
     btnColor: "#fff",
     btnAccentColor:"#444"

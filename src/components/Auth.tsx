@@ -109,7 +109,7 @@ function Auth() {
                 </AuthForm>
                 <div>
                     <GoogleBtn onClick={onSocialClick} name="google">Continue with Google</GoogleBtn>
-                    { }
+                    {}
                 </div>
             </Wrapper>
             <ModeBtn />
