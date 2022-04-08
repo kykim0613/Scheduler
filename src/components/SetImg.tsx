@@ -3,7 +3,7 @@ import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
 import { getDownloadURL, ref, uploadString } from "firebase/storage";
 import React, { useState } from "react";
 import styled from "styled-components";
-import { authService, dbService, storage } from "../fireB";
+import { authService, dbService, storageService } from "../fireB";
 
 const Wrapper = styled.div`
     width: 100%;
@@ -37,7 +37,7 @@ function SetImg() {
         event.prventDefault();
         let attachmentUrl = "";
         if (attachmentUrl != "") {
-            const fileRef = ref(storage, `id`)
+            const fileRef = ref(storageService, `id`)
             const response = await uploadString(fileRef, attachment, "data_url");
             attachmentUrl = await getDownloadURL(response.ref);
         }

@@ -31,3 +31,8 @@ export const DateState = atom({
     key: "date",
     default: []
 })
+
+export const MemoState = atom({
+    key: "memo",
+    default: []
+})

@@ -84,6 +84,7 @@ function App() {
       if(user) {
         setIsLoggedIn(true);
         setUserObj(user);
+        console.log(userObj)
       } else {
         setIsLoggedIn(false);
       }
